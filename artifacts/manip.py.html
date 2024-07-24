@@ -1,0 +1,179 @@
+
+
+<!DOCTYPE html> <html lang="en"> <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CS 1112: Spring 2021</title>
+<link rel="shortcut icon" href="/~cs1112/images/favicon.ico" /><link rel="stylesheet" type="text/css" href="/~cs1112/defs/css/211-default.css"></head>
+<body class="single-column-page">
+
+<div class="task-bar">
+
+<br/>
+
+
+<table class="header-bar">
+    
+<tr style="line-height: 26px;">
+
+    <td style="text-align: center; vertical-align: middle">
+        <a class="menu" href="/~cs1112/term/211/">
+        <img style="height: 35px" src="/~cs1112/images/home.svg" alt="home icon">
+    </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/software/" > <img style="height: 35px" src="/~cs1112/images/computer.svg" alt="software icon"> </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="https://piazza.com/class/kjbq7smpojd3wr"> <img style="height: 35px" src="/~cs1112/images/p.png" alt="piazza icon"> </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="https://www.cs.virginia.edu/~cs1112/zoom/link/" > <img style="height: 36px; filter: invert(100%);" src="/~cs1112/images/letter-z.png" alt="letter z in veranda"> </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/epistles/" > <img style="height: 35px" src="/~cs1112/images/letter-e.png" alt="e icon"> </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/modules/" > <img style="height: 35px" src="/~cs1112/images/info-icon.png" alt="info icon"> </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/info/" > <img style="height: 35px" src="/~cs1112/images/copyleft-kamyarg-wikimedia.png" alt="software icon"> </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/term/211/meetings/" > <img style="height: 35px" src="/~cs1112/images/calendar.png" alt="calendar icon"> </a> </td>
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/term/211/homework/" > <img style="height: 35px" src="/~cs1112/images/pencil.png"  alt="hw icon"> </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="https://www.cs.virginia.edu/~cs1112/scripts/submit/" > <img style="height: 35px; filter: invert(100%);" src="/~cs1112/images/upload.svg" alt="upload icon"> </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/term/211/misc/" > <img style="height: 35px" src="/~cs1112/images/misc.png" alt="misc icon"> </a> </td>
+
+<td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/testing/" > <img style="height: 35px; filter: invert(100%);" src="/~cs1112/images/scales.png" alt="Walks on Water [CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0)] scale icon"> </a> </td>
+
+</tr> <tr style="line-height: 26px; ">
+
+    <td style="text-align: center; vertical-align: middle"> <a class="menu" href="/~cs1112/term/211/"> &nbsp; Home &nbsp; </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/software/" > &nbsp; Software &nbsp; </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle"> <a class="menu" href=" https://piazza.com/class/kjbq7smpojd3wr" > &nbsp; Piazza &nbsp; </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="https://www.cs.virginia.edu/~cs1112/zoom/link/" > &nbsp; Zoom &nbsp; </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/epistles/" > &nbsp; Epistles &nbsp; </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/modules/" > &nbsp; Modules &nbsp; </a> </td>
+    
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/info/" > &nbsp; Info Sheet &nbsp; </a> </td> 
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/term/211/meetings/" > &nbsp; Meetings &nbsp; </a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/term/211/homework/"> &nbsp; Homework &nbsp; &nbsp;</a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="https://www.cs.virginia.edu/~cs1112/scripts/submit/"> &nbsp; Submissions &nbsp; &nbsp;</a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/term/211/misc/"> &nbsp; Misc &nbsp; &nbsp;</a> </td>
+
+    <td style="text-align: center; vertical-align: middle;"> <a class="menu" href="/~cs1112/testing/"> &nbsp; Testing &nbsp; &nbsp;</a> </td>
+
+</tr> </table>
+
+
+</tr> </table>
+</div>
+<div class="main-content">
+<br/>
+<h2>Image manipulation using <code>manip.py</code> function <code>manip()</code></h2><hr /><h3>Function <code>manip()</code></h3><blockquote class="coding"><p>manip( original, size=<code>same_size</code>, color=<code>same_color</code>, where=<code>same_where</code> )</p><p></blockquote></p><ul>
+<li>where </li>
+</ul><blockquote>
+<ul>
+<li>Image parameter <code>original</code> is to be the basis of the new image.</li>
+</ul>
+</blockquote><blockquote>
+<ul>
+<li>Function parameter <code>size()</code> is used to determine the size of the new image.</li>
+</ul>
+</blockquote><blockquote>
+<ul>
+<li>Function parameter <code>where()</code> is repeatedly use to determine where in the <code>original</code> image to find the spot whose pixel will tell how to paint the next spot in the new image.</li>
+</ul>
+</blockquote><blockquote>
+<ul>
+<li>Function parameter <code>color()</code> is repeatedly use to determine how the spots in the new image are to be painted.</li>
+</ul>
+</blockquote><h3>Discussion</h3><ul>
+<li>To make image manipulation simpler, the three function parameters <code>size()</code>, <code>where()</code>, and <code>color()</code> are optional. The default actions of these functions are to treat the new image identically to the original image. </li>
+</ul><blockquote>
+<ul>
+<li>The default <code>size()</code> function returns the dimensions of the original image.</li>
+</ul>
+</blockquote><blockquote>
+<ul>
+<li>The default <code>where()</code> function returns the same location as its coordinate parameter.</li>
+</ul>
+</blockquote><blockquote>
+<ul>
+<li>The default <code>color()</code> function returns the same color as its pixel parameter.</li>
+</ul>
+</blockquote><blockquote>
+<p>Thus, if an invocation of <code>manip()</code> uses all three default function parameters, the new image will be a duplicate of the original image.</p>
+</blockquote><ul>
+<li>The <code>manip()</code> function goes about creating a tweaking of an existing image in the following way.</li>
+</ul><ul>
+<li>The first thing to be decided is the dimensions of the new image. To do so, the <code>manip()</code> function makes use of its function parameter <code>size()</code>.  Function <code>size()</code> looks at the original image and returns the size of the new image.</li>
+</ul><blockquote class="coding"><p>nw, nh = size( original )</p><p></blockquote></p><ul>
+<li>The next thing to do is create an appropriately-sized new image.</li>
+</ul><blockquote class="coding"><p>new_image = Image.new( 'RGB', ( nw, nh ) )</p><p></blockquote></p><ul>
+<li>Now the serious work begins. Every spot in the new image needs to be painted. </li>
+</ul><ul>
+<li>A doubly-nested <code>for</code> loop makes sure every possible spot on the new image is processed.</li>
+</ul><blockquote class="coding"><p>for nx in range( 0, nw ) :</p><p>&nbsp;   for ny in range( 0, nh )</p><p></blockquote></p><ul>
+<li>The first thing to be done in the nested loop is to set variable <code>nspot</code> to be next spot in the new image to be painted.</li>
+</ul><blockquote class="coding"><p>nspot = ( nx, ny )</p><p></blockquote></p><ul>
+<li>To help determine how to paint location <code>nspot</code> in the new image, the <code>manip()</code> function looks for the spot in the <code>original</code> image whose pixel color will tell us how to paint location <code>nspot</code> in the new image.</li>
+</ul><ul>
+<li>The looking is done by the <code>where()</code> function parameter. The <code>where()</code> function takes three parameters: <code>nspot</code>, and the width and height of the new image. Using that information, it determines and returns the spot of interest in the original image. The spot is stored in <code>ospot</code>.</li>
+</ul><blockquote class="coding"><p>ospot = where( nspot, nw, nh )</p><p></blockquote></p><ul>
+<li>The <code>manip()</code> function then gets that pixel at location <code>ospot</code> in the original image. The  pixel is stored in <code>opixel</code>.</li>
+</ul><blockquote class="coding"><p>opixel = original.getpixel( ospot )</p><p></blockquote></p><ul>
+<li>To determine how to tweak <code>opixel</code> to get the get the right color for location <code>nspot</code>, the <code>manip()</code> function uses its function parameter <code>color()</code>. The function examines <code>opixel</code> and returns the pixel color to be used for the tweak.</li>
+</ul><blockquote class="coding"><p>npixel = color( opixel )</p><p></blockquote></p><ul>
+<li>The <code>manip()</code> function then paints location <code>nspot</code> in the new image with <code>opixel</code>.</li>
+</ul><blockquote class="coding"><p>new_image.putpixel( nspot, npixel )</p><p></blockquote></p><ul>
+<li>The <code>manip()</code> function then repeats the process to color the next unpainted spot in the new image.</li>
+</ul><ul>
+<li>When the nested loop completes, every spot in the new image has been painted. So, the <code>manip()</code> function returns the new image.</li>
+</ul><blockquote class="coding"><p>return new_image</p><p></blockquote></p><p><br/></p><hr /><h3>Function <code>manip()</code> in action</h3><ul>
+<li>Suppose we define a function <code>blue()</code> as follows</li>
+</ul><blockquote class="coding"><p>def blue( opixel ) :</p><p>&nbsp; r, g, b = opixel</p><p>&nbsp; npixel = ( 0, 0, b )</p><p>&nbsp; return npixel</p><p></blockquote></p><ul>
+<li>Then the invocation </li>
+</ul><blockquote class="coding"><p>new_image = manip( original, color=blue)</p><p></blockquote></p><blockquote>
+<p>will handback a new image that is the same size as the original image and every spot in the new image will be painted using just the blue component from the corresponding location in the original image.</p>
+</blockquote><table class="centered"> <tr> <td> <img width="300px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/screen.png" /> </td> <td> <img width="300px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/blue-manip.png" /> </tr> </table><ul>
+<li>It does so, because the default <code>size()</code> and <code>where()</code> functions are used. Their use ensures that the new image is the same size as the original image and each spot in the new image is a tweak of the pixel in the corresponding spot in the original.</li>
+</ul><ul>
+<li>Suppose we define a function <code>quadrant()</code> as follows. The function returns a halving of the original image&apos;s dimensions.</li>
+</ul><blockquote class="coding"><p>def quadrant( original ) :</p><p>&nbsp; w, h = original.size</p><p>&nbsp; nw = w // 2</p><p>&nbsp; nh = h // 2</p><p>&nbsp; return ( nw, nh )</p><p></blockquote></p><ul>
+<li>Then the invocation </li>
+</ul><blockquote class="coding"><p>new_image = manip( original, size=quadrant)</p><p></blockquote></p><blockquote>
+<p>will handback a new image that is one-fourth of the original image. The new image with be top left corner of the original image.</p>
+</blockquote><ul>
+<li>It does so, because the default <code>where()</code> and <code>color()</code> functions are used. Their use ensures that every pixel is new image is a copy of the pixel at the corresponding spot in the the original image.</li>
+</ul><table class="centered"> <tr> <td> <img width="300px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/screen.png" /> </td> <td style="vertical-align: top;" > <img width="150px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/fourth-manip.png" /> </tr> </table><ul>
+<li>Suppose we define a where function <code>left()</code> that returns ignores the x-coordinate of location parameter <code>nspot</code> and returns <code>(0, y)</code>, where <code>y</code> is the y-coordinate of <code>nspot</code>.</li>
+</ul><blockquote class="coding"><p>def left( nspot, nw, nh ) :</p><p>&nbsp; x, y = nspot</p><p>&nbsp; ospot = ( 0, y )</p><p>&nbsp; return ospot</p><p></blockquote></p><ul>
+<li>Then the invocation </li>
+</ul><blockquote class="coding"><p>new_image = manip( original, where=left)</p><p></blockquote></p><blockquote>
+<p>will handback a new image that is the same size as the original image. The new image will have every pixel in the same row being the same color. That color will be the color of the first pixel in the corresponding row in the original.</p>
+</blockquote><table class="centered"> <tr> <td> <img width="300px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/screen.png" /> </td> <td> <img width="300px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/left-manip.png" /> </tr> </table><ul>
+<li>The reason being the default <code>size()</code> and <code>color()</code> functions are used and the where function <code>left()</code> always looks at the leftmost pixel in the row indicated by the y-coordinate.</li>
+</ul><hr /><p>Lastly, suppose we invoke the <code>function()</code> <code>manip()</code> using the <code>blue()</code>, <code>quadrant()</code>, and the <code>left()</code> functions as parameters.  The result would be pass as follows.</p><table class="centered"> <tr> <td> <img width="300px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/screen.png" /> </td> <td style="vertical-align: top;" > <img width="150px" class="centered" alt="manip demo" src="http://www.cs.virginia.edu/~cs1112/images/manip/all-manip.png" /> </tr> </table>
+<p class="mini"> &nbsp; </p>
+
+<hr/>
+
+<table style="font-weight: bold;" width="100%"><tr>
+<td style="text-align: left"> &nbsp; 🦆 &copy; 2021 Jim Cohoon </td>
+<td style="text-align: right"> &nbsp; Resources from previous semesters are <a href="/~cs1112/term/"> available</a>. </td>
+</tr></table>
+<p class="mini"> &nbsp; </p>
+
+&nbsp; <br/> &nbsp;
+&nbsp; <br/> &nbsp;
+&nbsp; <br/> &nbsp;
+&nbsp; <br/> &nbsp;
+
+</div>
+</body>
+</html>
